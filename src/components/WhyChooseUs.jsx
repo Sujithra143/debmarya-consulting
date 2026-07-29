@@ -1,7 +1,7 @@
 
 import React from "react";
 import { Link } from "react-router-dom";
-import "../styles/WhyChooseUs.css";
+import "../styles/Whychooseus.css";
 import WhyChooseUsImage from "../assets/images/why-choose-image.avif";
 
 export default function WhyChooseUs() {
