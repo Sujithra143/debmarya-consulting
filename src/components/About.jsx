@@ -5,31 +5,53 @@ import { Link } from "react-router-dom";
 
 export default function About() {
     return (
+        <section className="who-we-are-compact">
+            <div className="container">
+                <div className="two-col-layout">
 
-        <section class="who-we-are-compact">
-            <div class="container">
-                <div class="two-col-layout">
+                    <div className="text-content content-column">
+                        <span className="sub-tag">WHO WE ARE</span>
 
-                    <div class="text-content">
-                        <span class="sub-tag">WHO WE ARE</span>
-                        <h2 class="title">Trusted Advisors in GCC & Automotive Transformation</h2>
+                        <h2 className="title">
+                            Trusted Advisors in GCC & Automotive Transformation
+                        </h2>
 
-                        <p class="summary-text">
+                        <p className="summary-text">
                             Debmarya Consulting is a specialist advisory firm focusing on strategy, leadership development, and technology transformation across Global Capability Centers (GCCs) and mobility sectors.
                         </p>
 
-                        <div class="tag-group">
-                            <span class="tag">✓ GCC Strategy</span>
-                            <span class="tag">✓ Automotive Consulting</span>
-                            <span class="tag">✓ Manufacturing Excellence</span>
-                            <span class="tag">✓ Leadership Advisory</span>
-                        </div>
+                        <div className="tag-group">
+                            <div className="tag">
+                                <span>✓</span>
+                                GCC Strategy
+                            </div>
 
-                        <Link to="/about" class="btn-outline">LEARN MORE ABOUT US &rarr;</Link>
+                            <div className="tag">
+                                <span>✓</span>
+                                Automotive Consulting
+                            </div>
+
+                            <div className="tag">
+                                <span>✓</span>
+                                Manufacturing Excellence
+                            </div>
+
+                            <div className="tag">
+                                <span>✓</span>
+                                Leadership Advisory
+                            </div>
+                        </div>
+                        <Link to="/about" className="btn-primary-about">
+                            Learn More About Us
+                        </Link>
                     </div>
 
-                    <div class="image-content">
-                        <img src={AboutImage} alt="Debmarya Consulting Leadership Team" />
+                    <div className="image-content image-column">
+                        <img
+                            src={AboutImage}
+                            alt="Debmarya Consulting Leadership Team"
+                            className="compact-img"
+                        />
                     </div>
 
                 </div>

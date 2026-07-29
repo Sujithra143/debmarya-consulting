@@ -4,22 +4,21 @@
     left: 0;
     width: 100%;
     height: 80px;
+    padding: 0 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 5%;
-    z-index: 1000;
     background: transparent;
+    z-index: 1000;
     box-sizing: border-box;
 }
 
 .navbar-logo a {
-    color: #ffffff;
-    font-size: 1.5rem;
-    font-weight: 900;
-    letter-spacing: 1px;
     text-decoration: none;
-    white-space: nowrap;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: 1px;
 }
 
 .navbar-logo span {
@@ -27,22 +26,82 @@
     font-weight: 300;
 }
 
+
 .navbar-links {
     display: flex;
-    gap: 25px;
+    align-items: center;
+    gap: 30px;
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
+.navbar-links li {
+    list-style: none;
+}
+
 .navbar-links a {
-    color: #ffffff;
-    font-size: 0.95rem;
-    font-weight: 600;
+    color: #fff;
     text-decoration: none;
-    transition: color 0.2s ease;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s;
 }
 
 .navbar-links a:hover {
-    color: #60a5fa;
+    color: #3b82f6;
+}
+
+.hamburger {
+    display: none;
+    font-size: 32px;
+    color: #fff;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .hamburger {
+        display: block;
+    }
+
+    .navbar-links {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: rgba(17, 24, 39, 0.98);
+
+        display: none;
+        flex-direction: column;
+        align-items: center;
+
+        padding: 20px 0;
+        gap: 20px;
+
+        box-shadow: 0 8px 20px rgba(0, 0, 0, .25);
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .navbar-links li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar-links a {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+        color: #fff;
+        font-size: 18px;
+    }
+
+    .navbar-links a:hover {
+        color: #3b82f6;
+    }
 }

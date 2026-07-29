@@ -63,7 +63,7 @@ export default function Services() {
                     <div className="block-content">
                         <ul className="auto-list">
                             {autoItems.map((item, idx) => (
-                                <li key={idx}>✓ {item}</li>
+                                <li key={idx}>{item}</li>
                             ))}
                         </ul>
                     </div>

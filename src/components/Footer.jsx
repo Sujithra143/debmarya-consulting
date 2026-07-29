@@ -8,16 +8,21 @@ export default function Footer() {
     const whatsappMessage = encodeURIComponent(
         "Hello! I'm interested in your consulting services."
     );
-
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+    };
     return (
         <>
 
             <footer className="footer-root">
                 <div className="footer-nav-links">
-                    <Link to="/">Home</Link>
-                    <Link to="/about">About</Link>
-                    <Link to="/services">Services</Link>
-                    <Link to="/contact">Contact</Link>
+                    <Link to="/" onClick={scrollToTop}>Home</Link>
+                    <Link to="/about" onClick={scrollToTop}>About</Link>
+                    <Link to="/services" onClick={scrollToTop}>Services</Link>
+                    <Link to="/contact" onClick={scrollToTop}>Contact</Link>
                 </div>
 
                 <div className="footer-horizontal-divider"></div>
