@@ -11,8 +11,10 @@ export default function Hero() {
                 style={{
                     backgroundImage: `
                         linear-gradient(
-                            rgba(15, 23, 42, 0.75),
-                            rgba(15, 23, 42, 0.85)
+                            135deg,
+                            rgba(15, 23, 42, 0.88) 0%,
+                            rgba(15, 23, 42, 0.75) 50%,
+                            rgba(30, 58, 138, 0.85) 100%
                         ),
                         url(${HeroBg})
                     `,
@@ -22,25 +24,27 @@ export default function Hero() {
 
                 <div className="hero-content">
                     <h1>
-                        TRANSFORMING GCC &
-                        AUTOMOTIVE INDUSTRY WITH EXPERT CONSULTING
+                        Transforming <span className="highlight-text">GCC</span> &
+                        <br />
+                        Automotive Industry
                     </h1>
 
-                    <p>
-                        Debmarya Consulting OPC Private Limited – Driving
-                        Excellence and Innovation
-                    </p>
+
                 </div>
 
                 <div className="sub-banner-box">
-                    <h2>STRATEGIC AUTOMOTIVE & GCC CONSULTING</h2>
+                    <h2>Strategic Automotive & GCC Consulting</h2>
 
                     <p>
-                        Debmarya Consulting OPC Pvt Ltd is a specialized
-                        consulting firm dedicated to transforming operational
-                        excellence and innovation in the Automotive Sector and
-                        GCC (Global Capability Centres).
+                        Dedicated to transforming operational paradigms and driving continuous
+                        innovation across Automobile OEMs, Tier-1 Suppliers, and Global Capability Centres.
                     </p>
+
+                    <div className="sub-banner-features">
+                        <div className="feature-pill">⚡ Lean Transformation</div>
+                        <div className="feature-pill">⚙️ SOP & Quality Frameworks</div>
+                        <div className="feature-pill">🌐 Global GCC Setup</div>
+                    </div>
                 </div>
             </section>
         </div>

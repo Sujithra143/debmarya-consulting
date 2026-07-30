@@ -3,8 +3,8 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 80px;
-    padding: 0 5%;
+    height: 90px;
+    padding: 0 6%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -15,53 +15,54 @@
 
 .navbar-logo a {
     text-decoration: none;
-    color: #fff;
-    font-size: 1.5rem;
+    color: #ffffff;
+    font-size: 1.4rem;
     font-weight: 800;
     letter-spacing: 1px;
 }
 
 .navbar-logo span {
-    color: #3b82f6;
-    font-weight: 300;
+    color: #38bdf8;
+    font-weight: 400;
 }
-
 
 .navbar-links {
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 32px;
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-.navbar-links li {
-    list-style: none;
-}
-
 .navbar-links a {
-    color: #fff;
+    color: #cbd5e1;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 600;
-    transition: 0.3s;
+    transition: all 0.3s ease;
+    padding: 8px 16px;
+    border-radius: 20px;
 }
 
 .navbar-links a:hover {
-    color: #3b82f6;
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.1);
 }
 
 .hamburger {
     display: none;
-    font-size: 32px;
-    color: #fff;
+    font-size: 30px;
+    color: #ffffff;
     cursor: pointer;
     user-select: none;
 }
 
-
 @media screen and (max-width: 768px) {
+    .navbar {
+        height: 80px;
+        padding: 0 5%;
+    }
 
     .hamburger {
         display: block;
@@ -72,16 +73,15 @@
         top: 80px;
         left: 0;
         width: 100%;
-        background: rgba(17, 24, 39, 0.98);
-
+        background: rgba(15, 23, 42, 0.98);
+        backdrop-filter: blur(12px);
         display: none;
         flex-direction: column;
         align-items: center;
-
-        padding: 20px 0;
-        gap: 20px;
-
-        box-shadow: 0 8px 20px rgba(0, 0, 0, .25);
+        padding: 24px 0;
+        gap: 16px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
     }
 
     .navbar-links.active {
@@ -94,14 +94,10 @@
     }
 
     .navbar-links a {
-        display: block;
-        width: 100%;
-        padding: 10px 0;
-        color: #fff;
-        font-size: 18px;
-    }
-
-    .navbar-links a:hover {
-        color: #3b82f6;
+        display: inline-block;
+        width: 80%;
+        padding: 12px 0;
+        color: #ffffff;
+        font-size: 16px;
     }
 }
